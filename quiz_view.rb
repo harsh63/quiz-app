@@ -18,9 +18,9 @@ quiz.mcqs.shuffle.each do |mcq|
   mcq.question.present
   mcq.option.present
 
-  user_answer = gets.chomp.to_i
+  index = gets.chomp.to_i
 
-  User.save_answer(mcq.option.values[user_answer - 1]) if user_answer.between?(1,4)
+  User.save_answer(mcq.option.values[index - 1]) if index.between?(1, 4)
 end
 
 quiz.check

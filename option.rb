@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Option
   attr_accessor :values
   def initialize(wrong_answer, right_answer)

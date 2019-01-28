@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# this module has raw data
 module RawData
   QUESTION_BANK = [
     {

@@ -2,6 +2,8 @@
 
 require_relative 'question'
 require_relative 'option'
+
+# class MCQ
 class MCQ
   attr_accessor :question, :option
   @@mcqs = []

@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Answer class
 class Answer
   @@answers = []
   def initialize(answer)

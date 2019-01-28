@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Question
   attr_accessor :content, :category
   def initialize(content, category)
