@@ -4,4 +4,10 @@ class Option
     @values = wrong_answer
     @values << right_answer
   end
+
+  def present
+    values.shuffle!.each_with_index do |option, index|
+      puts "#{index + 1}) #{option}"
+    end
+  end
 end

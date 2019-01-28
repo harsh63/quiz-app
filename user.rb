@@ -2,15 +2,20 @@
 
 # User class
 class User
-  @user_answers = []
+  @answers = []
   @score = 0
   @username = ''
+
   def self.create(username)
     @username = username
   end
 
   class << self
-    attr_accessor :username, :user_answers
+    attr_accessor :username, :answers
+  end
+
+  def self.save_answer(answer)
+    @answers << answer
   end
 
   def self.check_score(no_of_ques)
@@ -21,11 +26,7 @@ class User
     @score += 10
   end
 
-  def self.save_answer(answer)
-    @user_answers << answer
-  end
-
   def self.answer(index)
-    @user_answers[index]
+    @answers[index]
   end
 end

@@ -4,4 +4,8 @@ class Question
     @content = content
     @category = category
   end
+
+  def present
+    puts content.yellow
+  end
 end

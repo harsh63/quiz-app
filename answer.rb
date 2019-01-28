@@ -4,7 +4,7 @@ class Answer
     @@answers << answer
   end
 
-  def all
+  def self.sheet
     @@answers
   end
 end
